@@ -11,83 +11,102 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+// ==++ VARIABLES ++==//
+$brand-primary: #36c36e;
+
+// ==++ GLOBAL STYLES ++== //
+.btn-primary {
+  border: 1px solid $brand-primary;
+  background-color: $brand-primary;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.btn-primary:hover {
+  border: 1px solid $brand-primary;
+  background-color: darken($brand-primary, 6.5%);
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+.section-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+// ==++ NAV ++== //
+.navbar-default {
+  border: none;
+  background-color: white;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+// NAV LINKS
+.navbar-default .navbar-nav > li > a {
+
 }
 
-/* Main marketing message and sign up button */
+.navbar-default .navbar-nav > li > a:hover {
+  
+}
+
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+  background-color: white;
+  margin-left: -30px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+.jumbotron p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+// TODO
+// one I decide on a background img then change the muted text
+.mute {
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+}
 
-  /* Space out the masthead */
-  .header {
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-default {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  .navbar-default .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    transition: border-bottom .4s, background-color .4s;
   }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    border-bottom: 3px solid $brand-primary;
+    background-color: lighten($brand-primary, 25%);
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {} 
+
+// ==++ FEATURES ++== //
+#features {
+  padding-bottom: 70px;
+}
+
+div .circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $brand-primary;
+}
+
+.circle i {
+  padding-top: 13px;
+}
+
+.feature h3 {
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
