@@ -1,0 +1,20 @@
+// ==++ MAIN NAV ++== //
+.navbar-default {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+
+// TOGGLE:
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+
+  :hover {
+    background: transparent !important;
+  }
+
+  .icon-bar:hover {
+    background-color: #888 !important;
+  }
+}

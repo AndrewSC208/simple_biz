@@ -4,81 +4,35 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-hr {
-  border-color: black;
-}
+@import "_vars.scss";
+@import "_global.scss";
+@import "_navigation.scss";
+// @import "";
 
-// ==++ VARIABLES ++==//
-$brand-primary: #36c36e;
-$lt-brand-primary: lighten(#36c36e, 10%);
-$gray: #353535;
-$lt-gray: lighten(#353535, 40%);
+// ==++ MAIN ++== //
 
-// ==++ GLOBAL STYLES ++== //
-.btn {
-  padding: 20px 30px;
+// ==++ HEADER ++== //
+#header {
+  backround-image: url("../images/moutain-background-lg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }
-section {
-  padding: 20px;
-}
-
-.lt-btn-primary {
-  border: 1px solid $lt-brand-primary;
-  background-color: $lt-brand-primary;
-  color: white;
-}
-
-.lt-btn-primary:hover {
-  border: 1px solid $lt-brand-primary;
-  background-color: darken($lt-brand-primary, 20%);
-  color: white;
-}
-
-.btn-primary {
-  border: 1px solid $brand-primary;
-  background-color: $brand-primary;
-}
-
-.btn-primary:hover {
-  border: 1px solid darken($brand-primary, 6.5%);
-  background-color: darken($brand-primary, 6.5%);
-}
-
 .section-header {
   padding-top: 50px;
   padding-bottom: 70px;
 }
 
-// ==++ NAV ++== //
-.navbar-default {
-  border: none;
-  background-color: white;
-}
-
-// NAV LINKS
-.navbar-default .navbar-nav > li > a {
-
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  
-}
-
 .jumbotron {
-  background-color: white;
-  margin-left: -30px;
+  background: transparent;
 }
 
 .jumbotron p {
   padding-top: 25px;
   padding-bottom: 25px;
   font-size: 14px;
-}
-
-// TODO
-// one I decide on a background img then change the muted text
-.mute {
-
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -194,11 +148,13 @@ div .circle {
 }
 
 #banner-button {
-  position: absolute;
-  top: 50%;
+  margin-top: 30px;
 }
 
 // ==++ FOOTER ++== //
+footer .brand {
+  line-height: 125px;
+}
 footer {
   padding: 30px 0;
   color: white;

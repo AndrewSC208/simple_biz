@@ -1,0 +1,41 @@
+// ==++ GLOBAL STYLES ++== //
+hr {
+  border-color: black;
+}
+
+.btn {
+  padding: 20px 30px;
+}
+section {
+  padding: 20px;
+}
+
+.lt-btn-primary {
+  border: 1px solid $lt-brand-primary;
+  background-color: $lt-brand-primary;
+  color: white;
+}
+
+.lt-btn-primary:hover {
+  border: 1px solid $lt-brand-primary;
+  background-color: darken($lt-brand-primary, 20%);
+  color: white;
+}
+
+.btn-primary {
+  border: 1px solid $brand-primary;
+  background-color: $brand-primary;
+}
+
+.btn-primary:hover {
+  border: 1px solid darken($brand-primary, 6.5%);
+  background-color: darken($brand-primary, 6.5%);
+}
+
+.mute {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 900;
+}
