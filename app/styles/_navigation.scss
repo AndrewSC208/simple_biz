@@ -1,8 +1,32 @@
 // ==++ MAIN NAV ++== //
+.navbar {
+  border-radius: 0px;
+}
+
 .navbar-default {
   border: none;
   background: transparent;
   border-bottom: 1px solid white;
+  
+  .navbar-nav > li > a {
+    color: white;
+  }
+  
+  // need to figure out the .navbar-brand and why it is flashing gray when you hover over it.
+  .navbar-brand {
+  color: white;
+
+    :hover {
+      color: white;
+    }
+    :active {
+      color: white;
+    }
+
+    :focus {
+      color: white;
+    }
+  }
 }
 
 // TOGGLE:
@@ -16,5 +40,23 @@
 
   .icon-bar:hover {
     background-color: #888 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    transition: border-bottom .4s, background-color .4s;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    border-bottom: 3px solid $brand-primary;
+    background-color: lighten($brand-primary, 25%);
   }
 }

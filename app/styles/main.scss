@@ -7,63 +7,18 @@ $icon-font-path: '../fonts/';
 @import "_vars.scss";
 @import "_global.scss";
 @import "_navigation.scss";
+@import "_header.scss";
 // @import "";
 
 // ==++ MAIN ++== //
 
-// ==++ HEADER ++== //
-#header {
-  backround-image: url("../images/moutain-background-lg.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.section-header {
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-
-.jumbotron {
-  background: transparent;
-}
-
-.jumbotron p {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-size: 14px;
-}
-
+// MEDIA QURIES
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .navbar-default {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .navbar-default .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    transition: border-bottom .4s, background-color .4s;
-  }
-
-  .navbar-default .navbar-nav > li > a:hover {
-    border-bottom: 3px solid $brand-primary;
-    background-color: lighten($brand-primary, 25%);
-  }
-
-  .post {
-    padding-top: 0px;
-  }
-}
-
+@media (min-width: 768px) {}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
-
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {} 
 

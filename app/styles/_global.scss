@@ -39,3 +39,9 @@ section {
 .bold {
   font-weight: 900;
 }
+
+@media (min-width: 768px) {
+  .post {
+    padding-top: 0px;
+  }
+}

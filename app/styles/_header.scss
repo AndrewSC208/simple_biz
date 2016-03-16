@@ -1,0 +1,63 @@
+// ==++ HEADER ++== //
+header {
+  background-image: url("../images/moutain-background-lg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+// header ID inside container:
+#header {
+  color: white;
+
+  .jumbotron {
+    h1 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    p {
+      padding-top: 30px;
+
+    }
+  
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      p {
+        width: 70%;
+      }
+
+      h1 {
+        width: 80%;
+      }
+    }  
+
+    button .btn, .btn-primary {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) {
+      button {
+        float: left;
+      }
+    }
+  }
+}
+
+.section-header {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.jumbotron p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+}
