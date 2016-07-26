@@ -1,4 +1,5 @@
 $icon-font-path: '../fonts/';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -28,8 +29,8 @@ $icon-font-path: '../fonts/';
 }
 
 div .circle {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: $brand-primary;
 }
@@ -43,15 +44,15 @@ div .circle {
   padding-bottom: 10px;
 }
 
-
 // ==++ ABOUT ++== //
 #about {
   background-color: $lt-gray;
+  padding: 20px;
 }
 
 @media (min-width: 992px) {
   .about-content {
-    top: 100px;
+    top: 50px;
   }
 }
 
@@ -69,14 +70,19 @@ div .circle {
 }
 
 .testimonial cite {
-  margin-top: -10px;
+  margin-top: -20px;
   float: right;
+}
+
+cite {
+  font-size: .75em;
 }
 
 // ==++ Experiance ++== //
 #experiance {
   background-color: $gray;
   color: white;
+  padding: 20px;
 }
 .progress {
   border-radius: 0px;
@@ -86,12 +92,8 @@ div .circle {
 }
 
 // ==++ BLOG ++== //
-.post {
-  padding-top: 25px;
-}
-
-.comments {
-  padding-left:150px;
+.blog-reel {
+  padding-bottom: 20px;
 }
 
 // ==++ banner ++== //
@@ -103,7 +105,27 @@ div .circle {
 }
 
 #banner-button {
-  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 75%);
+
+  @media (max-width: 992px) {
+    transform: translate(-50%, 100%);
+  }
+
+  @media (max-width: 768px) {
+    position: inherit;
+    transform: none;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+  }
+
+}
+
+.banner-row {
+  polistion: relative;
 }
 
 // ==++ FOOTER ++== //

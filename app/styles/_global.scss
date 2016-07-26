@@ -1,13 +1,19 @@
 // ==++ GLOBAL STYLES ++== //
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.00em;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+}
+
 hr {
   border-color: black;
 }
 
 .btn {
   padding: 20px 30px;
-}
-section {
-  padding: 20px;
+  border-radius: 0px;
 }
 
 .lt-btn-primary {
@@ -22,15 +28,34 @@ section {
   color: white;
 }
 
+.lt-btn-primary:focus {
+  border: 1px solid $lt-brand-primary;
+  background-color: darken($lt-brand-primary, 20%);
+  color: white;
+  outline: 0 !important;
+}
+
 .btn-primary {
   border: 1px solid $brand-primary;
   background-color: $brand-primary;
+}
+
+.btn-primary:active {
+  background-color: darken($brand-primary, 12.00%);
 }
 
 .btn-primary:hover {
   border: 1px solid darken($brand-primary, 6.5%);
   background-color: darken($brand-primary, 6.5%);
 }
+
+.btn-primary:focus {
+  border: 1px solid darken($brand-primary, 12.00%);
+  background-color: darken($brand-primary, 12.00%);
+  outline: 0 !important;
+}
+
+
 
 .mute {
   font-weight: 100;
@@ -44,4 +69,15 @@ section {
   .post {
     padding-top: 0px;
   }
+}
+
+.glass {
+  background-color: rgba(1,1,1,.20);
+  padding: 15px;
+}
+
+.section-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 2.5em;
 }
